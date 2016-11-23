@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreImage
 
 class ViewController: UIViewController {
 
@@ -20,6 +21,42 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBOutlet private dynamic weak var imageView: UIImageView?
+    
+    // 画像をもどす
+    @IBAction private dynamic func reloadImage(_ sender: Any) {
+        
+        self.imageView?.image = UIImage(named:"salmon.png")
+    }
 
+    // セピアを適応する
+    @IBAction private dynamic func applySepia(_ sender: Any) {
+
+        if let inputuiImage = self.imageView?.image {
+            
+            self.imageView?.image = FilterType.sepia.getOutputImage(image: inputuiImage)
+        }
+    }
+    
+    // モノクロにする
+    @IBAction private dynamic func applyMono(_ sender: Any) {
+    
+        if let inputuiImage = self.imageView?.image {
+            
+            self.imageView?.image = FilterType.mono.getOutputImage(image: inputuiImage)
+        }
+    }
+    
+    // カスタムフィルタを適応する
+    @IBAction private dynamic func applyCustom1(_ sender: Any) {
+        
+        
+    }
+    
+    // カスタムフィルタを適応する
+    @IBAction private dynamic func applyCustom2(_ sender: Any) {
+        
+        
+    }
 }
 
