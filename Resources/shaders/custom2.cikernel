@@ -1,0 +1,8 @@
+kernel vec4 swapGreenAndBlueWhenXislowerThanHalfWidth ( __sample s, float imageWidth)
+{
+vec2 dest = destCoord();
+if(imageWidth/2.0 > dest.x) {
+return s.rbga;
+}
+return s.rgba;
+}

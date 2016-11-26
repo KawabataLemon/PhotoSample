@@ -45,15 +45,15 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXU-oH-bB8">
-                                <rect key="frame" x="130" y="410" width="60" height="30"/>
-                                <state key="normal" title="Custom1"/>
+                                <rect key="frame" x="107" y="410" width="106" height="30"/>
+                                <state key="normal" title="Custom1(Warp)"/>
                                 <connections>
                                     <action selector="applyCustom1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zzt-6Z-Zin"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ola-4t-mgT">
-                                <rect key="frame" x="129" y="470" width="62" height="30"/>
-                                <state key="normal" title="Custom2"/>
+                                <rect key="frame" x="106" y="470" width="109" height="30"/>
+                                <state key="normal" title="Custom2(Color)"/>
                                 <connections>
                                     <action selector="applyCustom2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hl2-OY-08g"/>
                                 </connections>

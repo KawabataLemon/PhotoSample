@@ -16,6 +16,8 @@
 		5282BF791DE60C2B0067BFFA /* salmon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5282BF771DE60B980067BFFA /* salmon.png */; };
 		5282BF7A1DE60C2B0067BFFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5282BF641DE5F0440067BFFA /* LaunchScreen.storyboard */; };
 		5282BF7C1DE60CE50067BFFA /* reload.png in Resources */ = {isa = PBXBuildFile; fileRef = 5282BF7B1DE60CE50067BFFA /* reload.png */; };
+		5282BF7F1DE9D0CA0067BFFA /* custom1.cikernel in Resources */ = {isa = PBXBuildFile; fileRef = 5282BF7E1DE9D0CA0067BFFA /* custom1.cikernel */; };
+		5282BF811DE9D0DE0067BFFA /* custom2.cikernel in Resources */ = {isa = PBXBuildFile; fileRef = 5282BF801DE9D0DE0067BFFA /* custom2.cikernel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		5282BF701DE605F50067BFFA /* CIImage+PhotoSample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CIImage+PhotoSample.swift"; sourceTree = "<group>"; };
 		5282BF771DE60B980067BFFA /* salmon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = salmon.png; sourceTree = "<group>"; };
 		5282BF7B1DE60CE50067BFFA /* reload.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reload.png; sourceTree = "<group>"; };
+		5282BF7E1DE9D0CA0067BFFA /* custom1.cikernel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = custom1.cikernel; sourceTree = "<group>"; };
+		5282BF801DE9D0DE0067BFFA /* custom2.cikernel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = custom2.cikernel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 		5282BF7D1DE95AEA0067BFFA /* shaders */ = {
 			isa = PBXGroup;
 			children = (
+				5282BF7E1DE9D0CA0067BFFA /* custom1.cikernel */,
+				5282BF801DE9D0DE0067BFFA /* custom2.cikernel */,
 			);
 			path = shaders;
 			sourceTree = "<group>";
@@ -165,6 +171,8 @@
 				5282BF631DE5F0440067BFFA /* Assets.xcassets in Resources */,
 				5282BF611DE5F0440067BFFA /* Main.storyboard in Resources */,
 				5282BF7C1DE60CE50067BFFA /* reload.png in Resources */,
+				5282BF811DE9D0DE0067BFFA /* custom2.cikernel in Resources */,
+				5282BF7F1DE9D0CA0067BFFA /* custom1.cikernel in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
