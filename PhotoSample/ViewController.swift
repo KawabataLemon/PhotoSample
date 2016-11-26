@@ -12,13 +12,13 @@ import CoreImage
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
+
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     @IBOutlet private dynamic weak var imageView: UIImageView?
@@ -32,31 +32,33 @@ class ViewController: UIViewController {
     // セピアを適応する
     @IBAction private dynamic func applySepia(_ sender: Any) {
 
-        if let inputuiImage = self.imageView?.image {
-            
-            self.imageView?.image = FilterType.sepia.getOutputImage(image: inputuiImage)
-        }
+        self.apply(type: .sepia)
     }
     
     // モノクロにする
     @IBAction private dynamic func applyMono(_ sender: Any) {
     
-        if let inputuiImage = self.imageView?.image {
-            
-            self.imageView?.image = FilterType.mono.getOutputImage(image: inputuiImage)
-        }
+        self.apply(type: .mono)
     }
     
     // カスタムフィルタを適応する
     @IBAction private dynamic func applyCustom1(_ sender: Any) {
         
-        
+        self.apply(type: .custom1)
     }
     
     // カスタムフィルタを適応する
     @IBAction private dynamic func applyCustom2(_ sender: Any) {
+
+        self.apply(type: .custom2)
+    }
+    
+    private func apply(type: FilterType) {
         
-        
+        if let inputuiImage = self.imageView?.image {
+            
+            self.imageView?.image = type.getOutputImage(image: inputuiImage)
+        }
     }
 }
 

@@ -31,8 +31,12 @@ enum FilterType: Int {
             
             return "CIColorMonochrome"
             
-        default:
-            return ""
+        case .custom1:
+            return "Custom1"
+
+        case .custom2:
+            return "Custom2"
+
         }
     }
 
@@ -40,22 +44,21 @@ enum FilterType: Int {
     func getOutputImage(image: UIImage) -> UIImage? {
         
         switch self {
+            
         case .sepia,.mono:
             
             let inputImage = CIImage(image: image)
             let filter = CIFilter(name: self.name,withInputParameters: ["inputIntensity": 1.0])
             filter?.setValue(inputImage, forKey: "inputImage")
 
-            if let outputImage = filter?.outputImage {
-                
-                let ciContext = CIContext(options: nil)
-                let cgImage = ciContext.createCGImage(outputImage, from: inputImage!.extent)
-                return UIImage(cgImage: cgImage!)
-            } else {
+            guard let outputImage = filter?.outputImage else {
                 
                 return nil
             }
-
+            
+            let ciContext = CIContext(options: nil)
+            let cgImage = ciContext.createCGImage(outputImage, from: inputImage!.extent)
+            return UIImage(cgImage: cgImage!)
             
         default:
             return nil
