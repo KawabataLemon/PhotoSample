@@ -55,9 +55,9 @@ class ViewController: UIViewController {
     
     private func apply(type: FilterType) {
         
-        if let inputuiImage = self.imageView?.image {
+        if let inputuiImage = self.imageView?.image,let ciimage = CIImage(image: inputuiImage) {
             
-            self.imageView?.image = type.getOutputImage(image: inputuiImage)
+            self.imageView?.image = UIImage(cgImage:CIContext(options: nil).createCGImage(type.filter(ciimage)!, from: (ciimage.extent))!)
         }
     }
 }
